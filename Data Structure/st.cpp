@@ -1,24 +1,10 @@
 //ST表模板
 #include <bits/stdc++.h>
-#define int long long
-#define PII pair<int,int>
-#define fi first
-#define se second
-#define endl "\n"
-
-#define lc (p<<1)
-#define rc (p<<1|1)
+using namespace std;
 #define lowbit(x) (x&-x)
 
-#define debug(x) cout<<#x<<":"<<x<<endl
-using namespace std;
-
-const int N=2e5+10,M=1010,mod=998244353,INF=0x3f3f3f3f;
-const int inf=0x3f3f3f3f3f3f3f3f;
-const double eps=1e-6;
-
-int dx[]={0,1,0,-1},dy[]={1,0,-1,0};
 int n,m,k,kk,u,v;
+const int N = 1;
 int f[18][N],Log[N],a[N];
 
 void init(){
@@ -47,12 +33,4 @@ void solve()
         cin>>u>>v;
         cout<<stmax(u,v)<<endl;
     }
-}
-
-signed main(){
-    ios::sync_with_stdio(0);cin.tie(0),cout.tie(0);
-    int _=1;
-    //cin>>-;
-    while(_--)solve();
-    return 0;
 }
