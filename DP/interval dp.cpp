@@ -12,7 +12,7 @@ int main(){
 	for( i = 1; i <= n; i++){
 		ll t;
 		cin >> t;
-		dp[i][i][1] = t;
+		dp[i][i] = t;
 	}
 	for(ll len = 2; len <= n; len++){ //环形区间dp就在后面复制一层
 		for(ll l = 1; l <= n-len+1; l++){
@@ -22,6 +22,6 @@ int main(){
 			}
 		}
 	}
-	cout << dp[1][n][0]; 
+	cout << dp[1][n]; 
 	return 0;
 }
