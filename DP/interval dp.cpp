@@ -2,6 +2,8 @@
 using namespace std;
 typedef long long ll;
 
+// 复杂度O(n立方)
+
 ll dp[310][310];   //区间dp最大的特点就数据量为百位
 ll i, j, n, m; 
 

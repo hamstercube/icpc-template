@@ -7,6 +7,7 @@ ll dp[200100][10][2];
 
 // 核心思维：小于等于R且满足条件的个数减小于等于L且满足的个数，还验证L本身是不是满足条件
 // 要注意处理前导0
+// 复杂度O(n)
 
 ll dfs(string &s, ll p, ll len, ll pre, ll free){ // s：L或R, p：从前往后第p位数，len: 还有多少位未填，pre: 条件，free：是否需要约束 
     if(!len){
