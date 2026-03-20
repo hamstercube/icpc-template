@@ -13,7 +13,7 @@ void solve(){
     for(ll i = 1; i <= n; i++){
         ll x, y;
         cin >> x >> y;            // x轴与y轴
-        if(d[xb][yb]) continue;   // 去重
+        if(d[x][y]) continue;   // 去重
         v.push_back({x, y});
         de.push_back({1, x, y});
         d[x][y] = 1;
