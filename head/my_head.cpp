@@ -23,6 +23,9 @@ using ld = long double;
 using ull = unsigned long long;
 using PII = pair<int, int>;
 using PLL = pair<ll, ll>;
+using vei = vector<int>;
+using vevei = vector<vector<int>>;
+
 
 const double PI = acos(-1);
 

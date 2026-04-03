@@ -4,7 +4,7 @@ using namespace std;
 #define lowbit(x) (x&-x)
 
 int n,m,k,kk,u,v;
-const int N = 1;
+const int N = 2e5 + 10;
 int f[18][N],Log[N],a[N];
 
 void init(){
