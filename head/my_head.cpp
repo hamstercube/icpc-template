@@ -3,9 +3,11 @@
 #define fi first
 #define se second
 #define all(a) a.begin(), a.end()
+#define endl '\n'
 //#define int long long
 #define lb(v,x) (int)(lower_bound(all(v),x)-v.begin())
 #define ub(v,x) (int)(upper_bound(all(v),x)-v.begin())
+#define lowbit(x) (x & -x)
 #define F(i, x, y) for (int i = (x); i <= (y); i++)
 #define DF(i, x, y) for (int i = (x); i >= (y); i--)
 #define debug(x) cout << #x << ": " << x << endl;
