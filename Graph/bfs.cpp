@@ -40,3 +40,6 @@ void solve(){
     if(d[0][0]) cout << d[0][0] << endl;
     else cout << -1 << endl;
 }
+
+
+// 原题链接：https://acm.hdu.edu.cn/contest/problem?cid=1197&pid=1009
