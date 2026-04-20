@@ -1,0 +1,85 @@
+[例题](https://www.luogu.com.cn/problem/P1714)
+
+关键点：
+j 不能等于 i！
+j 必须是 i 之前的元素！
+所以顺序必须是：
+先弹过期 j（保证 j 在窗口内）
+用 j 算答案（j 是 i 前面的）
+再把 i 加入队列（变成未来的 j）
+
+前缀和的滑窗有顺序问题要注意
+
+```cpp
+#include <bits/stdc++.h>
+#define pb push_back
+#define fi first
+#define se second
+#define all(a) a.begin(), a.end()
+#define endl '\n'
+//#define int long long
+#define lb(v,x) (int)(lower_bound(all(v),x)-v.begin())
+#define ub(v,x) (int)(upper_bound(all(v),x)-v.begin())
+#define lowbit(x) (x & -x)
+#define F(i, x, y) for (int i = (x); i <= (y); i++)
+#define DF(i, x, y) for (int i = (x); i >= (y); i--)
+#define debug(x) cout << #x << ": " << x << endl;
+#define ihb(x) ((x) == 0 ? -1 : (31 - __builtin_clz((x)))) // 最高1位子,0开始
+#define lhb(x) ((x) == 0 ? -1 : (63 - __builtin_clzll((x))))
+#define ione __builtin_popcount // 1的个数
+#define lone __builtin_popcountll 
+
+template<class T1, class T2> bool cmin(T1 &x, const T2 &y) { if (y < x) { x = y; return 1; } return 0; }
+template<class T1, class T2> bool cmax(T1 &x, const T2 &y) { if (x < y) { x = y; return 1; } return 0; }
+
+using namespace std;
+using ll = long long;
+using ld = long double;
+using ull = unsigned long long;
+using PII = pair<int, int>;
+using PLL = pair<ll, ll>;
+using vei = vector<int>;
+using veb = vector<bool>;
+using vevei = vector<vector<int>>;
+using ai3 = array<int, 3>;
+
+
+const double PI = acos(-1);
+
+void init(){
+    ;
+}
+
+void solve(){
+    int n,m;
+    cin >> n >> m;
+    vei a(n + 10);
+    F(i,1,n){
+        cin >> a[i];
+        a[i] += a[i - 1];
+    }
+    deque<int> q;
+    q.push_back(0);
+    int ans = -1e8;
+    F(i,1,n){
+        while(q.front() + m < i) q.pop_front();
+        cmax(ans, a[i] - a[q.front()]);
+        while(q.size() && a[q.back()] >= a[i]) q.pop_back();
+        q.push_back(i);
+    }
+    cout << ans << endl;
+    return;
+}
+
+signed main(){
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+
+    init();
+    
+    int _ = 1;
+    // cin >> _;
+    while (_--) solve();
+    return 0;
+}
+```
