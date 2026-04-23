@@ -27,6 +27,7 @@ using PII = pair<int, int>;
 using PLL = pair<ll, ll>;
 using vei = vector<int>;
 using veb = vector<bool>;
+using bep = vector<PII>;
 using vevei = vector<vector<int>>;
 using ai3 = array<int, 3>;
 

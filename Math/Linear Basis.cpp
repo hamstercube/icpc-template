@@ -1,5 +1,8 @@
 struct XXJ{
     array<ll, 64> base;
+    XXJ(){
+        for(int i = 0; i < 64; i ++) base[i] = 0;
+    }
     bool insert(ll x){    //将集合每个数插入线性基，插入成功则返回true
         for(ll i = 60; i >= 0; i--){
             ll t = (x>>i)&1;
