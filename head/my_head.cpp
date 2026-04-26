@@ -3,6 +3,7 @@
 #define fi first
 #define se second
 #define all(a) a.begin(), a.end()
+#define part(a,n) a.begin() + 1, a.begin() + 1 + n
 #define endl '\n'
 //#define int long long
 #define lb(v,x) (int)(lower_bound(all(v),x)-v.begin())
@@ -27,7 +28,7 @@ using PII = pair<int, int>;
 using PLL = pair<ll, ll>;
 using vei = vector<int>;
 using veb = vector<bool>;
-using bep = vector<PII>;
+using vep = vector<PII>;
 using vevei = vector<vector<int>>;
 using ai3 = array<int, 3>;
 
