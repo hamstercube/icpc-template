@@ -20,7 +20,6 @@ struct XXJ{
             ll t = (x>>i)&1;
             if(t == 0) continue;
             if(base[i] == 0){
-                base[i] = x;
                 return false;
             }
             x ^= base[i];
