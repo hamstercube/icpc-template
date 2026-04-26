@@ -1,3 +1,4 @@
+```cpp
 
 //埃氏筛:
 const int N = 1;
@@ -14,3 +15,5 @@ void get_primes(int n)
     } 
 } 
 
+
+```

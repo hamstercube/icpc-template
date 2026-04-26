@@ -1,3 +1,4 @@
+```cpp
 //ST表模板
 #include <bits/stdc++.h>
 using namespace std;
@@ -34,3 +35,5 @@ void solve()
         cout<<stmax(u,v)<<endl;
     }
 }
+
+```
