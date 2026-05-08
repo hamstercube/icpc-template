@@ -1,3 +1,4 @@
+```cpp
 //建树时记录叶子节点深度 
 #include<bits/stdc++.h>
 using namespace std;
@@ -90,3 +91,5 @@ ll query(ll l,ll r){
 // 	}
 // 	return 0;
 // }
+
+```

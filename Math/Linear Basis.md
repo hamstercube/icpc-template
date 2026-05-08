@@ -1,3 +1,4 @@
+```cpp
 struct XXJ{
     array<ll, 64> base;
     XXJ(){
@@ -27,3 +28,4 @@ struct XXJ{
         return true;
     }
 };
+```
