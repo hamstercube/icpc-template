@@ -1,3 +1,5 @@
+初始：
+mp[x][y] = mp[x][y]-mp[x][y-1]-mp[x-1][y]+mp[x-1][y-1];
 
 标记： 
 auto change = [&](ll x, ll y, ll xt, ll yt){
@@ -8,4 +10,4 @@ auto change = [&](ll x, ll y, ll xt, ll yt){
 };
 
 还原：
-mp[x][y] = mp[x-1][y]+mp[x][y-1]+mp[x-1][y-1]+mp[x][y]; 
+mp[x][y] = mp[x-1][y]+mp[x][y-1]-mp[x-1][y-1]+mp[x][y]; 

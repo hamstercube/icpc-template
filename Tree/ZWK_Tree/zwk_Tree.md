@@ -10,7 +10,7 @@ ll mod;
 
 void build(){
   	for(P = 1, DEP = 0; P <= n; P<<=1, DEP++);
-  	for(ll i = 1; i <= n; i++) tr[i+P] = v[i];
+  	for(ll i = 1; i <= n+1; i++) tr[i+P] = v[i];
   	for(ll i = (P+n)>>1; i; i--) {
         tr[i] = tr[i<<1]+tr[i<<1|1]; //合并左右子树的规则 
     }
