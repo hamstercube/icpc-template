@@ -18,6 +18,7 @@ void get_ne(string s){
 
 /*
 	下标从1开始
+	ne[1] = 1;
 	for(ll i = 2, j = 1; i < s.size(); i++){
 		while(s[i] != s[j] && j != 1) j = ne[j-1];
 		if(s[i] == s[j]) j++;
