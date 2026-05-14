@@ -1,3 +1,6 @@
+BFS
+
+```cpp
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long ll;
@@ -42,4 +45,4 @@ void solve(){
 }
 
 
-// 原题链接：https://acm.hdu.edu.cn/contest/problem?cid=1197&pid=1009
+// 原题链接：https://acm.hdu.edu.cn/contest/problem?cid=1197&pid=1009```
