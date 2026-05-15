@@ -1,3 +1,6 @@
+数位dp
+
+```cpp
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long ll;
@@ -45,3 +48,4 @@ int main(){
     cout << cot[1]-cot[0]+check(s[0]);
     return 0;
 }
+```

@@ -1,3 +1,6 @@
+区间dp
+
+```cpp
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long ll;
@@ -25,3 +28,4 @@ int main(){
 	cout << dp[1][n]; 
 	return 0;
 }
+```
